@@ -2,6 +2,7 @@
 
 import { Button } from "../ui/button"
 import { Search, MapPin, Clock, Sparkles } from 'lucide-react';
+import { Link } from 'react-router-dom'
 
 // eslint-disable-next-line react/prop-types
 const FeatureCard = ({ icon, title, description }) => {
@@ -37,9 +38,11 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
-            <Button size="lg" className="bg-[#4DA8DA] hover:bg-[#3891c3]">
-              Start Planning Free
-            </Button>
+            <Link to={'/create-trip'}>
+              <Button size="lg" className="bg-[#4DA8DA] hover:bg-[#3891c3]">
+                Start Planning Free
+              </Button>
+            </Link>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">

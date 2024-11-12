@@ -8,7 +8,7 @@ const Header = () => {
         <div className="max-w-7xl mx-auto p-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <a href="/">
-            <img src="/logo.svg" alt="JournAI Logo" className="h-12"/></a>
+            <img src="/logo.svg" alt="JournAI Logo" className="h-12 text-[#4DA8DA]"/></a>
           </div>
           <div className="flex items-center gap-6">
             {/* <nav className="hidden md:flex items-center gap-6">
